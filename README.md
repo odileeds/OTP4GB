@@ -32,7 +32,7 @@ Lastly, if you are a UK government body, or similar, and you use this work pleas
 ## Tools required
 * [Open Trip Planner](github.com/opentripplanner/). For all of this project I have used version 1.4.0.
 * [osmconvert](https://wiki.openstreetmap.org/wiki/Osmconvert) (64-bit version required)(optional). To crop the Open Street Map files to reduce the OTP graph size and speed up journey planning.
-* [gtsf filter](https://github.com/twalcari/gtfs-filter)(optional). To crop both the time and geographical extent of the input public transport timetables to reduce the OTP graph size and speed up journey planning.
+* [gtsf filter](https://github.com/twalcari/gtfs-filter) (optional). To crop both the time and geographical extent of the input public transport timetables to reduce the OTP graph size and speed up journey planning.
 
 ## Input data sources
 The tool requires three sources of information,
