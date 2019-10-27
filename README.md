@@ -45,6 +45,9 @@ In addition to OSM maps and GTFS timetables two configuration files are essentia
 * build-config.json (this contains only `{platformEntriesLinking: true}`. Without this the router fails to link streets with train platforms and most railway stations are unusable.
 * router-config.json (this must contain as a mininum `routingDefaults: {driveOnRight: false}` because in the UK we drive on the left.) Other possible contents are explained in the [OTP documentation on configuration options](http://docs.opentripplanner.org/en/latest/Configuration/). It is highly likely that tweaking some of these configuation options would speed up route planning significantly. Please let me know if you achieve that.
 
+## Running it on Azure Web apps
+I haven't yet got this to work, but there seem to be good tutorials about how to run a Grizzly Server on Azure, and I just need to follow them.
+
 ## Relevant links
 The [ONS propeR](https://github.com/datasciencecampus/propeR) work assisted us enormously in this project. We have in many ways simply extended their approach for Wales to the whole of Great Britain. We were unable to get their recommended GB railway timetable conversion tool to work and so have written our own.
 Without [Marcus Young's work documenting Open Trip Planner](https://github.com/marcusyoung/otp-tutorial) and writing excellent tutorials this work would have been impossible.
