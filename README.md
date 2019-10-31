@@ -3,7 +3,9 @@ Open Trip Planner for Great Britain. Journey planning and accessibility mapping 
 
 ## How to run
 I've included an example Open Trip Planner instance. To run (you'll need Java installed) just type,
+
 `java -Xmx4G -jar otp-1.5.0-SNAPSHOT-shaded.jar --router centredonsouthyorkshire --graphs graphs --server`
+
 into your command line.
 
 ## Motivation
