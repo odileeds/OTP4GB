@@ -8,6 +8,21 @@ I've included an example Open Trip Planner instance. To run (you'll need Java in
 
 into your command line.
 
+## How to run in Docker
+
+You'll need to download [this Graph.obj file](https://tomforth.co.uk/Graph.obj) and
+save in `graphs/centredonsouthyorkshire`.
+
+1. Build and tag the docker instance `docker build . --tag otp4sy`
+2. Run the docker instance `docker run -it --rm --publish 8080:8080 otp4sy`
+
+Of course, this being docker, you can map port 8080 in the container to any other port. To run on port 80, for example, do this:
+
+```bash
+docker run -it --rm --publish 80:8080 otp4sy
+```
+
+
 ## Motivation
 We want to be able to answer questions like,
 * How many more people will be able to get to The Trafford Centre by public transport once the tram extension opens?
