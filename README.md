@@ -1,6 +1,11 @@
 # OTP4GB
 Open Trip Planner for Great Britain. Journey planning and accessibility mapping for all of GB, or parts of it, by Walking, Bicycle, Driving, and Public Transport of all forms except flying.
 
+## How to run
+I've included an example Open Trip Planner instance. To run (you'll need Java installed) just type,
+`java -Xmx4G -jar otp-1.5.0-SNAPSHOT-shaded.jar --router centredonsouthyorkshire --graphs graphs --server`
+into your command line.
+
 ## Motivation
 We want to be able to answer questions like,
 * How many more people will be able to get to The Trafford Centre by public transport once the tram extension opens?
