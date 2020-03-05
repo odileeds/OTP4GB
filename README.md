@@ -1,7 +1,12 @@
 # OTP4GB
 Open Trip Planner for Great Britain. Journey planning and accessibility mapping for all of GB, or parts of it, by Walking, Bicycle, Driving, and Public Transport of all forms except flying.
 
-## How to run
+## How to build a graph.obj file
+This will create a graph.obj file using any GTFS (.zip) and OSM (.pbf) it finds in the target directory.
+
+`java -Xmx20G -jar otp-1.4.0-shaded.jar --build graphs/centredonsouthyorkshire`
+
+## How to run a server (once you already have a graph.obj file)
 I've included an example Open Trip Planner instance. To run (you'll need Java installed) just type,
 
 `java -Xmx4G -jar otp-1.4.0-shaded.jar --router centredonsouthyorkshire --graphs graphs --server`
