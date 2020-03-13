@@ -64,7 +64,7 @@ Lastly, if you are a UK government body, or similar, and you use this work pleas
 ## Input data sources
 The tool requires three sources of information,
 * [OSM maps via GeoFabrik](http://download.geofabrik.de/).
-* GB public transport timetables (except for rail) via [Traveline](https://www.travelinedata.org.uk/), converted into GTFS using [TransXChange2GTFS](github.com/danbillingsley/TransXChange2GTFS).
+* GB public transport timetables (except for rail) via [Traveline](https://www.travelinedata.org.uk/), converted into GTFS using [TransXChange2GTFS](https://github.com/danbillingsley/TransXChange2GTFS).
 * GB railway transport timetables via [ATOC](http://data.atoc.org/data-download), converted into GTFS using [ATOCCIF2TransXChange](https://github.com/thomasforth/ATOCCIF2TransXChange).
 
 ## Important files
