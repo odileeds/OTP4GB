@@ -1,0 +1,180 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Inputs\ScottishGeography\**" />
+    <EmbeddedResource Remove="Inputs\ScottishGeography\**" />
+    <None Remove="Inputs\ScottishGeography\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\build-config.json" />
+    <None Remove="Assets\EA_GTFS.zip" />
+    <None Remove="Assets\EM_GTFS.zip" />
+    <None Remove="Assets\GBRail_GTFS.zip" />
+    <None Remove="Assets\great-britain-latest.osm.pbf" />
+    <None Remove="Assets\gtfs-filter-0.1.jar" />
+    <None Remove="Assets\lib\commons-beanutils-1.7.0.jar" />
+    <None Remove="Assets\lib\commons-cli-1.2.jar" />
+    <None Remove="Assets\lib\commons-logging-1.0.3.jar" />
+    <None Remove="Assets\lib\guava-10.0.1.jar" />
+    <None Remove="Assets\lib\jsr305-1.3.9.jar" />
+    <None Remove="Assets\lib\logback-classic-0.9.30.jar" />
+    <None Remove="Assets\lib\logback-core-0.9.30.jar" />
+    <None Remove="Assets\lib\onebusaway-csv-entities-1.0.1.jar" />
+    <None Remove="Assets\lib\onebusaway-gtfs-1.2.4.jar" />
+    <None Remove="Assets\lib\slf4j-api-1.6.2.jar" />
+    <None Remove="Assets\L_GTFS.zip" />
+    <None Remove="Assets\NE_GTFS.zip" />
+    <None Remove="Assets\NPR.zip" />
+    <None Remove="Assets\NW_GTFS.zip" />
+    <None Remove="Assets\osmconvert64.exe" />
+    <None Remove="Assets\otp-1.5.0-shaded.jar" />
+    <None Remove="Assets\otp-2.0.0-shaded.jar" />
+    <None Remove="Assets\router-config.json" />
+    <None Remove="Assets\SE_GTFS.zip" />
+    <None Remove="Assets\SW_GTFS.zip" />
+    <None Remove="Assets\S_GTFS.zip" />
+    <None Remove="Assets\WM_GTFS.zip" />
+    <None Remove="Assets\W_GTFS.zip" />
+    <None Remove="Assets\Y_GTFS.zip" />
+    <None Remove="Inputs\2011MSOA_PWC.csv" />
+    <None Remove="Inputs\LSOACentroids.csv" />
+    <None Remove="Inputs\ManchesterCityCentre.csv" />
+    <None Remove="Inputs\ManchesterLSOAs.csv" />
+    <None Remove="Inputs\ManchesterMSOAs.csv" />
+    <None Remove="Inputs\ManchesterPlacesOfEducation.csv" />
+    <None Remove="Inputs\MSOACentroids_NorthEngland_LatLong.csv" />
+    <None Remove="Inputs\MSOACentroids_NorthEngland_RoadSnappedLatLong.csv" />
+    <None Remove="Inputs\PlacesOfEducation.csv" />
+    <None Remove="ProjectionWKT\EPSG23030.txt" />
+    <None Remove="ProjectionWKT\EPSG3035.txt" />
+    <None Remove="ProjectionWKT\EPSG3857.txt" />
+    <None Remove="ProjectionWKT\EPSG4326.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\build-config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\EA_GTFS.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\EM_GTFS.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GBRail_GTFS.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\great-britain-latest.osm.pbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\gtfs-filter-0.1.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lib\commons-beanutils-1.7.0.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lib\commons-cli-1.2.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lib\commons-logging-1.0.3.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lib\guava-10.0.1.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lib\jsr305-1.3.9.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lib\logback-classic-0.9.30.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lib\logback-core-0.9.30.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lib\onebusaway-csv-entities-1.0.1.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lib\onebusaway-gtfs-1.2.4.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lib\slf4j-api-1.6.2.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\L_GTFS.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\NE_GTFS.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\NPR.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\NW_GTFS.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\osmconvert64.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\otp-1.5.0-shaded.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\otp-2.0.0-shaded.jar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\router-config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SE_GTFS.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SW_GTFS.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\S_GTFS.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\WM_GTFS.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\W_GTFS.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Y_GTFS.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\MSOACentroids_NorthEngland_LatLong.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\MSOACentroids_NorthEngland_RoadSnappedLatLong.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProjectionWKT\EPSG23030.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProjectionWKT\EPSG3035.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProjectionWKT\EPSG3857.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProjectionWKT\EPSG4326.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="27.1.1" />
+    <PackageReference Include="NetTopologySuite" Version="2.4.0" />
+    <PackageReference Include="NetTopologySuite.IO.GeoJSON" Version="2.0.4" />
+    <PackageReference Include="ProjNet" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>
