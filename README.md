@@ -17,6 +17,7 @@ By default the solution will build a graph for a square of about 15 miles by 15 
 If the defaults work you have the basis for further analysis.
 
 ## Previous versions
+A previous versin of this repository included a Docker image. This has been removed. We are happy to provide guidance on running Open Trip Planner within Docker if you want.
 
 ## Alternative trip planners
 This project uses Open Trip Planner v1.5. For journey planning this has been superceded by the much faster Open Trip Planner v2.x. For road journeys GraphHopper is excellent, but it's public transport calculations are slow for long journeys.
