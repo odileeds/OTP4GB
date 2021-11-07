@@ -5,7 +5,7 @@ Open Trip Planner for Great Britain. Journey planning and accessibility mapping 
 This is just the code portion of the project. [Download a working solution including the required Assets here](https://www.tomforth.co.uk/OTP4GB/OTP4GB.zip), unzip the download, and open in Visual Studio 2022 (or newer).
 
 ## Requirements
-This project works on Windows. You'll need Visual Studio 2022 or newer. Then just open the `*.sln` file. You'll need a Java runtime installed, all testing was done in the (Microsoft builds of OpenJDK 17)[https://docs.microsoft.com/en-gb/java/openjdk/download].
+This project works on Windows. You'll need Visual Studio 2022 or newer. Then just open the `*.sln` file. You'll need a Java runtime installed, all testing was done in the ([Microsoft builds of OpenJDK 17](https://docs.microsoft.com/en-gb/java/openjdk/download).
 
 You'll need a lot of RAM. 32GB should be sufficient to compile a transport model for an area about the size of Yorkshire. 64GB should be sufficient to compile a transport model for the whole of North England, or for London.
 
